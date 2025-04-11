@@ -1,29 +1,3 @@
-# from database.db_manager import get_top_resumes_by_role, mark_as_shortlisted
-# from datetime import datetime
-
-# class ResumeRanker:
-#     def __init__(self):
-#         pass
-    
-#     def rank_resumes(self, role_id, top_n=10):
-#         """Rank resumes for a specific role based on similarity score"""
-#         # Get top resumes
-#         top_resumes = get_top_resumes_by_role(role_id, limit=top_n)
-        
-#         # Return ranked resumes
-#         return top_resumes
-    
-#     def shortlist_top_resumes(self, role_id, top_n=10):
-#         """Shortlist top N resumes for a specific role"""
-#         # Get top resumes
-#         top_resumes = self.rank_resumes(role_id, top_n)
-        
-#         # Mark them as shortlisted
-#         for resume in top_resumes:
-#             mark_as_shortlisted(resume.id)
-        
-#         return top_resumes
-
 from database.db_manager import get_resumes_for_role, mark_as_shortlisted, get_role
 from datetime import datetime
 from rag.vector_store import VectorStore  # Import VectorStore for similarity calculations
