@@ -1,9 +1,21 @@
 # .gitignore
-.env
-.venv/
+
+# Python
 __pycache__/
 *.py[cod]
 *.env
+.env
+.venv/
+venv/
+
+# Node
+node_modules/
+build/
+dist/
+
+# Others
 .DS_Store
-.idea/
 .vscode/
+.idea/
+*.log
+*.sqlite3
